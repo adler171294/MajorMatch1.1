@@ -1,0 +1,563 @@
+.rrot .form-control-dark {
+    border-color: var(--bs-gray);
+}
+.form-control-dark:focus {
+    border-color: #fff;
+    box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.25);
+}
+
+.text-small {
+    font-size: 85%;
+}
+
+/* ---------------------------BARU------------------------------ */
+.dropdown-toggle:not(:focus) {
+    outline: 0;
+}
+
+.navbar-nav .nav-item {
+    position: relative; /* Untuk posisi relatif garis */
+}
+
+.navbar-nav .nav-link {
+    padding-bottom: 0px; /* Memberikan ruang di bawah teks */
+    color: #fff; /* Warna teks default */
+    transition: color 0.3s; /* Transisi untuk efek halus */
+}
+
+.navbar-nav .nav-item.active .nav-link {
+    font-weight: bold; /* Menebalkan teks untuk item aktif */
+}
+
+.navbar-nav .nav-item.active .nav-link::after {
+    content: ""; /* Membuat pseudo-element */
+    display: block; /* Menjadikannya elemen blok */
+    width: 100%; /* Lebar penuh */
+    height: 5px; /* Tinggi garis */
+    background-color: white; /* Warna garis */
+    position: absolute; /* Posisi absolut */
+    left: 0; /* Mengatur ke kiri */
+    bottom: 0; /* Mengatur ke bawah */
+    /* margin-left: 50px; */
+    border-radius: 2px;
+}
+
+.navbar-nav .nav-item .nav-link::after {
+    content: ""; /* Membuat pseudo-element */
+    display: block; /* Menjadikannya elemen blok */
+    width: 0; /* Awalnya tidak terlihat */
+    height: 5px; /* Tinggi garis */
+    background-color: white; /* Warna garis */
+    position: absolute; /* Posisi absolut */
+    left: 0; /* Mengatur ke kiri */
+    bottom: 0; /* Mengatur ke bawah */
+    transition: width 0.3s; /* Transisi untuk efek halus */
+}
+
+.navbar-nav .nav-link:hover {
+    /* Warna latar belakang saat hover */
+    color: #5fc8f9; /* Warna teks saat hover */
+}
+
+.navbar {
+    background-color: #357c9d;
+    width: 100%;
+    height: 130px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    box-shadow: 0 2px 5px rgba(41, 85, 121, 0.1);
+    z-index: 1000;
+}
+.navbar-brand {
+    font-size: 30px;
+    color: #fff;
+}
+
+.navbar-brand img {
+    width: 70px;
+    height: 70px;
+    margin-left: 30px;
+}
+
+.nav-link {
+    color: #fff;
+    font-size: 30px;
+    font-family: "Inria Serif", serif;
+}
+
+.nav-item {
+    padding: 30px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Hero Section */
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    height: 70vh;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-section h1 {
+    font-family: "jersey 25";
+    color: #fff;
+    font-size: 5rem;
+    margin-bottom: 20px;
+    /* stroke: #5fc8f9; */
+    /* -webkit-text-stroke: 1px #5fc8f9; */
+    text-shadow: -1px -1px 0 #5fc8f9, 1px -1px 0 #5fc8f9, -1px 1px 0 #5fc8f9,
+        1px 1px 0 #5fc8f9; /* Efek outline */
+}
+
+.info-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.rectangle-div1 {
+    width: 90%;
+    height: 512px;
+    padding-top: 45px;
+    position: relative;
+    border-radius: 10px;
+    background-color: rgba(217, 217, 217, 0.7);
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 445px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(196, 148, 148, 0.1);
+    height: 250px;
+}
+.card h2 {
+    color: #1f4959;
+    font-size: 30px;
+    font-family: "Inria Serif", serif;
+    font-weight: 700;
+}
+
+.card p {
+    color: #1f4959;
+    font-family: "Inria Serif", serif;
+    font-weight: 700;
+}
+
+/* ---------------------------BARU------------------------------ */
+.second-section {
+    display: flex;
+    background-color: #357c9d;
+    width: auto;
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.slogan {
+    text-align: center;
+    width: auto;
+}
+
+.second-section img {
+    display: inline-flex;
+    margin-left: 200px;
+    margin-right: 200px;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 7px;
+}
+
+/* .second-section h5 {
+    display: inline-flex;
+    margin-left: 200px;
+    margin-right: 200px;
+    color: #fff;
+    font-size: 1em;
+    width: 92px;
+    margin-bottom: 5px;
+    align-items: center;
+} */
+
+.slogan1 {
+    display: inline-flex;
+    margin-left: 190px;
+    margin-right: 195px;
+    color: #fff;
+    font-size: 1em;
+    width: auto;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.slogan2 {
+    display: inline-flex;
+    margin-left: 190px;
+    margin-right: 195px;
+    color: #fff;
+    font-size: 1em;
+    width: auto;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.slogan3 {
+    display: inline-flex;
+    margin-left: 200px;
+    margin-right: 195px;
+    color: #fff;
+    font-size: 1em;
+    width: auto;
+    margin-bottom: 5px;
+    text-align: center;
+}
+/* ------------------------------------------------------------- */
+
+.rectangle-div {
+    width: 100%;
+    position: relative;
+    background: linear-gradient(180deg, #fff, #73ceef);
+    height: 838px;
+}
+
+/* REKOMENDASI */
+.judul {
+    width: 400px;
+    position: relative;
+    font-size: 30px;
+    display: inline-block;
+    font-family: "Inria Sans", serif;
+    color: #357c9d;
+    text-align: left;
+    -webkit-text-stroke: 1px #357c9d;
+    padding-left: 130px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.judul1 {
+    width: 200px;
+    position: relative;
+    font-size: 25px;
+    display: inline-block;
+    font-family: "Inria Sans", serif;
+    color: #357c9d;
+    text-align: left;
+    -webkit-text-stroke: 1px #357c9d;
+    padding-left: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.bidang {
+    font-family: "Inria Sans", serif;
+    color: #357c9d;
+    position: relative;
+    padding-left: 50px;
+    font-size: 20px;
+}
+
+.form-select {
+    width: 520px;
+    padding-left: 260px;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.rekomendasi-page {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    margin: 0;
+    padding: 0;
+}
+
+.container1 {
+    width: 70%;
+    margin: 20px auto;
+}
+
+.form-group label {
+    width: 150px;
+    margin-right: 10px;
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #2d5e72;
+    font-family: "Inria Serif", serif;
+    font-size: 25px;
+    width: 50%;
+}
+
+.form-group select,
+.form-group input {
+    flex: 1;
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 10px;
+    color: #357c9d;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #2d5e72;
+    /* Warna latar belakang tombol */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    /* Sudut membulat */
+    font-size: 18px;
+    font-family: "Inria Serif", serif;
+    height: 50px;
+    width: 15%;
+}
+
+button:hover {
+    background-color: #1f4959;
+    /* Warna saat hover */
+}
+
+option {
+    color: #357c9d;
+}
+
+.output-container {
+    /* display: none; */
+    /* Awalnya tidak terlihat */
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-top: 15px;
+    margin-left: 235px;
+    margin-bottom: 100px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 900px;
+    height: auto;
+}
+
+/*-------------------------------- PROFIL------------------------------- */
+.form-group1 input {
+    flex: 1;
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 10px;
+    color: #357c9d;
+}
+
+.form-group1 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    width: 70%;
+    padding-left: 430px;
+}
+
+.judul3 {
+    margin: auto;
+    position: relative;
+    font-size: 40px;
+    display: inline-block;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #fff;
+    text-align: left;
+    padding-left: 550px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.rectangle-div img {
+    margin-top: 50px;
+    margin-left: 650px;
+    width: 140px;
+    height: 140px;
+}
+
+.rectangle-div3 {
+    margin-top: 50px;
+    width: 140px;
+    height: 140px;
+    width: 100%;
+    position: relative;
+    background: linear-gradient(180deg, #fff, #73ceef);
+    height: 838px;
+}
+
+.profilcontainer {
+    /* display: none; */
+    /* Awalnya tidak terlihat */
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 900px;
+}
+
+.button1 {
+    padding: 5px 10px;
+    background-color: #2d5e72;
+    /* Warna latar belakang tombol */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    /* Sudut membulat */
+    font-size: 20px;
+    font-family: "Inria Serif", serif;
+    height: 40px;
+    width: 13%;
+    margin-left: 625px;
+}
+
+.informasi-page {
+    background-image: url("asset/buku.png");
+}
+
+.FAQ-page {
+    background-image: url("asset/faq.png");
+}
+
+/* JURUSAN */
+
+/* ---------------------------BARU------------------------------ */
+/* FAQ */
+.faq-section {
+    text-align: center;
+    background-position: center;
+    padding: 50px 20px;
+    color: #333;
+}
+
+.faq-title {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #01365d;
+}
+
+.carousel-container {
+    position: relative;
+    overflow: hiden;
+    /* Untuk menyembunyikan card di luar area carousel */
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.carousel {
+    display: flex;
+    gap: 1em;
+    transition: transform 0.5s ease-in-out;
+}
+
+.faq-card {
+    margin-top: 100px;
+    justify-items: center;
+    background-color: #dddada;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 0 0 48%;
+    /* Menampilkan dua card dalam satu baris */
+    text-align: center;
+    width: 700px;
+    margin-left: 380px;
+    height: auto;
+}
+
+.card-title {
+    font-size: 1.5em;
+    color: #01365d;
+    margin-bottom: 15px;
+    font-size: 25px;
+    font-family: "Inria Serif", serif;
+    font-weight: bold;
+}
+
+.faq-card p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #27587a;
+    font-size: 20px;
+    font-family: "Inria Serif", serif;
+}
+
+.arrow-button {
+    background-color: #27587a;
+    color: #333;
+    border: none;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 1.5em;
+    cursor: pointer;
+    /* position: absolute; */
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+.arrow-button:hover {
+    background-color: #0d486f;
+}
+
+.arrow-button.left {
+    left: 0px;
+}
+
+.arrow-button.right {
+    right: 10px;
+}
+
+.carousel-control-prev {
+    overflow: visible;
+    margin-top: 200px;
+    margin-left: 30px;
+}
+
+.carousel-control-next {
+    overflow: visible;
+    margin-top: 200px;
+    margin-right: 30px;
+}
+
+@media (max-width: 768px) {
+    .faq-card {
+        flex: 0 0 90%;
+        /* Menampilkan satu card per baris pada layar kecil */
+    }
+
+    .arrow-button {
+        display: none;
+        /* Sembunyikan tombol pada layar kecil */
+    }
+}
+
+/* ------------------------------------------------------------ */
